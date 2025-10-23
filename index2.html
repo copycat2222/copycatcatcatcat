@@ -1,0 +1,234 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>啵</title>
+
+    <style>
+      @font-face {
+        font-family: "Pretendard-Regular";
+        src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+          format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        font-family: "Pretendard-Regular";
+        background: url(bgbgbg.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+      }
+      .player-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 360px;
+        height: 660px;
+        padding: 10px 10px 20px 10px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        background-color: rgb(17 9 49 / 24%);
+        backdrop-filter: blur(4px);
+      }
+      .player-title {
+        color: #fff;
+      }
+      .player-txt p {
+        color: #fff;
+        font-weight: 200;
+        font-family: '맑은고딕';
+    }
+      .player-gif {
+        width: 97%;
+        height: 283px;
+        border-radius: 30px;
+        border: 1px solid #fff;
+        background: url(bgbgbgbg.jpg)
+          no-repeat;
+        background-size: cover;
+      }
+      .player-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+      .player-bar figure {
+        margin: 0;
+        width: 20px;
+      }
+      .player-bar figure img {
+        display: block;
+        width: 100%;
+      }
+      .player-btn img:nth-child(2) {
+        display: none;
+      }
+      .player-btn.stop img:nth-child(1) {
+        display: none;
+      }
+      .player-btn.stop img:nth-child(2) {
+        display: block;
+      }
+      .player-txt {
+        overflow-y: scroll;
+        height: 250px;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 13px;
+        text-wrap: wrap;
+      }
+      .player-txt::-webkit-scrollbar {
+        width: 5px;
+      }
+      .player-txt::-webkit-scrollbar-thumb {
+        background-color: #fff;
+      }
+      .player-txt::-webkit-scrollbar-track {
+        background-color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="player-wrap">
+      <div class="player-gif"></div>
+      <p class="player-title">♪ 昨晚我夢見我學會了游泳</p>
+      <div class="player-bar">
+        <figure>
+          <img
+            src="https://blog.kakaocdn.net/dn/ba8eKm/btsGNz7M8Zr/UAVEB3MN5CDEypG1d10s91/img.png"
+            alt="#"
+          />
+        </figure>
+        <figure class="player-btn">
+          <img
+            class="player-start"
+            src="https://blog.kakaocdn.net/dn/bMTcH6/btsGLCEUD7E/XLgkedcd20iGkn4VnmZYa1/img.png"
+            alt="#"
+          />
+          <img
+            class="player-stop"
+            src="https://blog.kakaocdn.net/dn/dA9Uis/btsGMJwAwgk/q86RzBK4h3vPqezqaBELM1/img.png"
+            alt="#"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://blog.kakaocdn.net/dn/bzeGRL/btsGNts4muX/kbOPnc3BohDaKtqTze0RCK/img.png"
+            alt="#"
+          />
+        </figure>
+      </div>
+      <div class="player-txt">
+        <p>濃霧 猶如波紋般散開<br />짙은 안개가 물결처럼 퍼져 나가</p>
+        <p>我多像是 一顆粒子醒來<br />난 마치 한 알의 입자가 깨어난 것 같아</p>
+        <p>凝望著 無止境的水域<br />끝없이 펼쳐진 물을 바라보고</p>
+        <p>旋轉在其中的銀河<br />그 안에서 도는 은하를 보는데</p>
+        <p>只留下了一道沉默的白<br />남은 건 고요한 하얀색 하나뿐</p>
+        <p>四周 是否從未有誰在<br />주변엔 원래 아무도 없었던 걸까</p>
+        <p>還是早就 游出我視線外<br />아니면 이미 내 시야 밖으로 떠난 걸까</p>
+        <p>舊浮標和遺棄的酒瓶<br />낡은 부표랑 버려진 술병들이</p>
+        <p>開口嘲笑我慢吞吞<br />내 느린 걸 비웃으면서</p>
+        <p>應該多吃 蔬菜<br />채소 좀 더 먹으라네</p>
+        <p>
+          於是我在漆黑中劃過 暗湧水面<br />그래서 난 새까만 속을 가르며 물속의
+          잔물결 위를 헤엄쳐
+        </p>
+        <p>
+          過往所有細節被消毒試劑通通洗掠<br />과거의 모든 디테일이 소독약으로 싹
+          씻겨나가고
+        </p>
+        <p>於是我變做池魚離開<br />난 마치 연못 속에서 풀려난 물고기처럼</p>
+        <p>感受被誰放生的錯覺<br />누가 날 풀어준 것 같은 착각을 느껴</p>
+        <p>在夜塌下來之前<br />밤이 무너지기 전에</p>
+        <p>淺水區中適應這冰冷<br />얕은 물속에서 이 차가움에 적응해</p>
+        <p>忘了 前面唱過了什麼<br />뭘 불렀는지도 까먹었네, 앞에 뭐였더라</p>
+        <p>
+          這又不是諾蘭寫的情節<br />이건 노란 감독 영화 같은 복잡한 내용도
+          아닌데
+        </p>
+        <p>猜猜看永無止境的夢<br />끝없는 꿈속에서</p>
+        <p>能不能學會自由泳<br />자유형을 배울 수 있을까</p>
+        <p>也許就能自由<br />그러면 진짜 자유로워질까</p>
+        <p>
+          於是我在漆黑中劃過 暗湧水面<br />그래서 난 새까만 속을 가르며 물속의
+          잔물결 위를 헤엄쳐
+        </p>
+        <p>
+          過往所有細節被消毒試劑通通洗掠<br />과거의 모든 디테일이 소독약으로 싹
+          씻겨나가고
+        </p>
+        <p>於是我變做池魚離開<br />난 마치 연못 속에서 풀려난 물고기처럼</p>
+        <p>感受被誰放生的錯覺<br />누가 날 풀어준 것 같은 착각을 느껴</p>
+        <p>在夜塌下來之前<br />밤이 무너지기 전에</p>
+        <p>
+          遊進深水浪漫的渦旋<br />깊은 물속의 로맨틱한 소용돌이로 헤엄쳐 들어가
+        </p>
+        <p>
+          所以盡力呼吸我終於 潛入水面<br />그래서 숨을 최대한 들이마시고 드디어
+          물속 깊이 잠겨
+        </p>
+        <p>
+          身體是我的槳帶我逃脫岸上的視線<br />내 몸이 노처럼 날 끌고 가서 육지의
+          시선에서 벗어나게 해줘
+        </p>
+        <p>所以接受溺斃的危險<br />그래서 익사할 위험도 받아들이고</p>
+        <p>自由只是微小的差別<br />자유라는 건 사실 별거 아닌 차이일지라도</p>
+        <p>但我擁抱這種幻覺<br />난 그 환상을 끌어안아</p>
+        <p>我夢見你會了解<br />그리고 꿈속에서 널 이해하게 될 거라 믿어</p>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (() => {
+        const btnWrap  = document.querySelector(".player-btn");
+        const btnStart = document.querySelector(".player-start");
+        const btnStop  = document.querySelector(".player-stop");
+        const src = "https://blog.kakaocdn.net/dna/bF4DXP/dJMb9Nhi1mt/AAAAAAAAAAAAAAAAAAAAAOrqFyo11DimuRG4UjpTt17ysj9C2vcDa-hMuSMt-mUO/tfile.mp3?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1756652399&allow_ip=&allow_referer=&signature=s5E%2F8vpflUYAfM65w9nIQ6LGe7M%3D";
+    
+        let audio1 = null;
+    
+        function ensureAudio() {
+          if (!audio1) {
+            audio1 = new Audio(src);
+            audio1.loop = false;       // 반복재생 안 함
+            audio1.volume = 0.5;
+            audio1.addEventListener("ended", () => {
+              btnWrap.classList.remove("stop");
+            });
+          }
+          return audio1;
+        }
+    
+        btnStart.addEventListener("click", async () => {
+          const a = ensureAudio();
+          a.currentTime = 0;
+          try {
+            await a.play();
+            btnWrap.classList.add("stop");
+          } catch (err) {
+            console.error("재생 실패:", err);
+          }
+        });
+    
+        btnStop.addEventListener("click", () => {
+          if (!audio1) return;
+          audio1.pause();
+          btnWrap.classList.remove("stop");
+        });
+      })();
+    </script>
+    
+  </body>
+</html>
